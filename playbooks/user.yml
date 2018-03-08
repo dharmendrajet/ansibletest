@@ -1,0 +1,17 @@
+---
+- hosts: linux
+#  remote_user: ansible
+#  become: yes
+#  become_method: sudo
+  tasks:
+      - name: ping
+        ping:
+
+- hosts: linux
+  become: yes
+  become_method: sudo
+  tasks:
+      - name: Create user
+        user:
+            name: afreen
+            state: present
