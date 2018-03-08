@@ -1,0 +1,6 @@
+---
+  tasks:
+      - name: Create file
+        file:
+            path: /tmp/dharm
+            state: touch
